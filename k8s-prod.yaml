@@ -13,8 +13,9 @@ spec:
       labels:
         app: jenkins-demo
     spec:
+      nodeName: wjjnode1
       containers:
-      - image: xianchao/jenkins-demo:<BUILD_TAG>
+      - image: hackwjj/jenkins-demo:<BUILD_TAG>
         imagePullPolicy: IfNotPresent
         name: jenkins-demo
         env:
